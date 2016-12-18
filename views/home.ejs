@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% if (status){ %>
+    <p>Welcome, <%= name %>,<%= tel %></p>
+    <a href="/insert" target="_blank"><button type="button" id='insert-book'>图书入库</button></a>
+    <a href="/select" target="_blank"><button type="button" id='select-book'>图书查询</button></a>
+    <a href="/cardBorrow" target="_blank"><button type="button" id='borrow-book'>借书</button></a>
+    <a href="/cardReturn" target="_blank"><button type="button" id='return-book'>还书</button></a>
+    <a href="/manage" target="_blank"><button type="button" id='manage-card'>借书证管理</button></a>
+    <a href="/test" target="_blank"><button type="button" id='insert-book'>导入测试文件</button></a>
+
+    <% }else{ %>
+    <p>Login failed! Please check your ID and password</p>
+    <% }%>
+  </body>
+</html>

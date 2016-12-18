@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="returnDo" method="post">
+      <fieldset>
+        <legend>还书</legend>
+        <p>
+          <span>bno:</span>
+          <br>
+          <input id="bno" name="book_bno" type="text">
+        </p>
+          <input id="cno" name="card_cno" type="hidden" value='<%= cno %>' >
+        <p><input type="submit" value="提交"></p>
+      </fieldset>
+    </form>
+    <% if(data == ''){ %>
+    <p>没有待还书!</p>
+    <%} else {%>
+    <table>
+      <thead>
+      <tr>
+        <th>bno</th>
+        <th>category</th>
+        <th>title</th>
+        <th>press</th>
+        <th>year</th>
+        <th>author</th>
+        <th>price</th>
+        <th>total</th>
+        <th>stock</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% var i = 0; %>
+      <%for (i = 0; i < data.length; i++){
+        if(i >= 50) break;
+        info = data[i];console.log(data[i]);%>
+      <tr>
+        <td><%=info.bno%></td>
+        <td><%=info.category%></td>
+        <td><%=info.title%></td>
+        <td><%=info.press%></td>
+        <td><%=info.year%></td>
+        <td><%=info.author%></td>
+        <td><%=info.price%></td>
+        <td><%=info.total%></td>
+        <td><%=info.stock%></td>
+      </tr>
+      <%}%>
+      </tbody>
+    </table>
+  <%}%>
+  </body>
+</html>

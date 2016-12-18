@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="selectDo" method="post">
+      <fieldset>
+        <legend>搜索条件</legend>
+        <p>
+          <span>bno:</span>
+          <br>
+          <input id="bno" name="book_bno" type="text">
+        </p>
+        <p>
+          <span>category</span>
+          <br>
+          <input id="category" name="book_category" type="text">
+        </p>
+        <p>
+          <span>title</span>
+          <br>
+          <input id="title" name="book_title" type="text">
+        </p>
+        <p>
+          <span>press</span>
+          <br>
+          <input id="press" name="book_press" type="text">
+        </p>
+        <p>
+          <span>year</span>
+          <br>
+          <input id="year" name="book_year" type="text">
+        </p>
+        <p>
+          <span>author</span>
+          <br>
+          <input id="author" name="book_author" type="text">
+        </p>
+        <p>
+          <span>price</span>
+          <br>
+          <input id="price" name="book_price" type="text">
+        </p>
+        <p>
+          <span>total</span>
+          <br>
+          <input id="total" name="book_total" type="text">
+        </p>
+        <p>
+          <span>stock</span>
+          <br>
+          <input id="stock"name="book_stock" type="text">
+        </p>
+        <p>
+          <span>排列顺序</span>
+          <br>
+          <select name="select_order">
+            <option value="bno">bno</option>
+            <option value="category">category</option>
+            <option value="title">title</option>
+            <option value="press">press</option>
+            <option value="year">year</option>
+            <option value="author">author</option>
+            <option value="price">price</option>
+            <option value="total">total</option>
+            <option value="stock">stock</option>
+          </select>
+          <select name="AD">
+            <option value="ASC">从小到大</option>
+            <option value="DESC">从大到小</option>
+          </select>
+        </p>
+        <p><input type="submit" value="查询"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

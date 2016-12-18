@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% if(data == ''){ %>
+    <p>没有相应的记录!</p>
+    <%} else {%>
+    <table>
+      <thead>
+      <tr>
+        <th>bno</th>
+        <th>category</th>
+        <th>title</th>
+        <th>press</th>
+        <th>year</th>
+        <th>author</th>
+        <th>price</th>
+        <th>total</th>
+        <th>stock</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% var i = 0; %>
+      <%for (i = 0; i < data.length; i++){
+        if(i >= 50) break;
+        info = data[i];console.log(data[i]);%>
+      <tr>
+        <td><%=info.bno%></td>
+        <td><%=info.category%></td>
+        <td><%=info.title%></td>
+        <td><%=info.press%></td>
+        <td><%=info.year%></td>
+        <td><%=info.author%></td>
+        <td><%=info.price%></td>
+        <td><%=info.total%></td>
+        <td><%=info.stock%></td>
+      </tr>
+      <%}%>
+      </tbody>
+    </table>
+  <%}%>
+  </body>
+</html>

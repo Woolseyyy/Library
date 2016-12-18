@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="insertCard" method="post">
+      <fieldset>
+        <legend>添加借书证</legend>
+        <p>
+          <span>cno:</span>
+          <br>
+          <input id="bno" name="card_cno" type="text">
+        </p>
+        <p>
+          <span>name:</span>
+          <br>
+          <input id="category" name="card_name" type="text">
+        </p>
+        <p>
+          <span>department</span>
+          <br>
+          <input id="title" name="card_department" type="text">
+        </p>
+        <p>
+          <span>type</span>
+          <br>
+          <select name="card_type">
+            <option value="T">T</option>
+            <option value="G">G</option>
+            <option value="U">U</option>
+            <option value="O">O</option>
+          </select>
+        </p>
+        <p><input type="submit" value="添加"></p>
+      </fieldset>
+    </form>
+    <form action="deleteCard" method="post">
+      <fieldset>
+        <legend>删除借书证</legend>
+        <p>
+          <span>cno:</span>
+          <br>
+          <input id="bno" name="card_cno" type="text">
+        </p>
+        <p><input type="submit" value="删除"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

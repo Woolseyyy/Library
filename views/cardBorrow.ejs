@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="cardBorrowCno" method="post">
+      <fieldset>
+        <legend>借书</legend>
+        <p>
+          <span>cno:</span>
+          <br>
+          <input id="cno" name="card_cno" type="text">
+        </p>
+        <p><input type="submit" value="提交"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

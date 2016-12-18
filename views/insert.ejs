@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="insertDo" method="post">
+      <fieldset>
+        <legend>单条插入</legend>
+        <p>
+          <span>bno:</span>
+          <br>
+          <input id="bno" name="book_bno" type="text">
+        </p>
+        <p>
+          <span>category</span>
+          <br>
+          <input id="category" name="book_category" type="text">
+        </p>
+        <p>
+          <span>title</span>
+          <br>
+          <input id="title" name="book_title" type="text">
+        </p>
+        <p>
+          <span>press</span>
+          <br>
+          <input id="press" name="book_press" type="text">
+        </p>
+        <p>
+          <span>year</span>
+          <br>
+          <input id="year" name="book_year" type="text">
+        </p>
+        <p>
+          <span>author</span>
+          <br>
+          <input id="author" name="book_author" type="text">
+        </p>
+        <p>
+          <span>price</span>
+          <br>
+          <input id="price" name="book_price" type="text">
+        </p>
+        <p>
+          <span>total</span>
+          <br>
+          <input id="total" name="book_total" type="text">
+        </p>
+        <p>
+          <span>stock</span>
+          <br>
+          <input id="stock"name="book_stock" type="text">
+        </p>
+        <p><input type="submit" value="添加"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

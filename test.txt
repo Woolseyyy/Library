@@ -1,0 +1,46 @@
+[
+    {
+        "bno" : 210,
+        "category" : "计算机",
+        "title" : "php实战",
+        "press" : "未来出版社",
+        "year" : 2010,
+        "author" : "ABC",
+        "price" : 58.00,
+        "total" : 10,
+        "stock" : 10
+    },
+    {
+        "bno" : 220,
+        "category" : "计算机",
+        "title" : "php深入浅出",
+        "press" : "未来出版社",
+        "year" : 2010,
+        "author" : "ABC",
+        "price" : 58.00,
+        "total" : 10,
+        "stock" : 10
+    },
+    {
+            "bno" : 230,
+            "category" : "计算机",
+            "title" : "c++",
+            "press" : "未来出版社",
+            "year" : 2011,
+            "author" : "ABC",
+            "price" : 589.00,
+            "total" : 10,
+            "stock" : 10
+    },
+    {
+            "bno" : 240,
+            "category" : "心理学",
+            "title" : "群体心理学",
+            "press" : "心灵出版社",
+            "year" : 2010,
+            "author" : "VDS",
+            "price" : 10.00,
+            "total" : 8,
+            "stock" : 7
+        }
+]
